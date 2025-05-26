@@ -3,7 +3,7 @@ import { createServer, proxy } from 'aws-serverless-express';
 import { Callback, Context, Handler } from 'aws-lambda';
 import { NestFactory } from '@nestjs/core';
 import { ExpressAdapter } from '@nestjs/platform-express';
-import express from 'express'; // <-- import mặc định
+import express from 'express'; 
 import { AppModule } from '../src/app.module';
 
 let cachedServer: Handler;
