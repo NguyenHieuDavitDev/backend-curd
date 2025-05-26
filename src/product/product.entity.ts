@@ -3,17 +3,17 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 @Entity()
 export class Product {
   @PrimaryGeneratedColumn()
-  id!: number; // <-- thêm !
+  id!: number;
 
   @Column()
-  name!: string; // <-- thêm !
+  name!: string;
 
   @Column('text')
-  description!: string; // <-- thêm !
+  description!: string;
 
   @Column('decimal')
-  price!: number; // <-- thêm !
+  price!: number;
 
   @Column({ default: true })
-  isActive!: boolean; // <-- thêm !
+  isActive!: boolean;
 }
